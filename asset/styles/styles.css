@@ -1,0 +1,322 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    position: relative;
+}
+nav{
+    position: sticky;
+    top: 0;
+}
+.desktop{
+    background-color: #383E4C;
+    width: 100%;
+    height: 120px;
+    padding-top: 26px;
+}
+.mobile{
+    padding: 12px;
+    background-color: black;
+    width: fit-content;
+    border-radius: 6px;
+    position: absolute;
+    display: none;
+}
+.inner-desktop{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    margin: 0 auto;
+    border: 3px solid #49505F;
+}
+.inner-desktop div{
+    padding: 20px 0;
+    border-right: 3px solid #49505F;
+}
+.inner-desktop div:hover{
+    background-color: #49505F;
+}
+.inner-desktop div:last-child{
+    border-right: 0px;
+}
+.inner-desktop a{
+    color: white;
+    font-size: 27px;
+    padding:0 20px 20px;
+    border-bottom: 1px solid white;
+    text-decoration: none;
+}
+.conquer{
+    background-image: url("/asset/images/background.jpg");
+    background-size: 100%;
+    background-attachment: fixed;
+    background-position: cover;
+    background-repeat: no-repeat;
+    padding: 13em 0;
+    text-align: center;
+    color: white;
+}
+.conquer h1{
+    font-size: 4.5rem;
+    text-shadow: 3px 3px 2px #000000;
+    padding-bottom: 10px;
+}
+.conquer h3{
+    font-size: 1.5rem;
+}
+.card{
+    margin: 4.0em 2.3em;
+}
+.three-column-card{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    text-align: center;
+    gap: 40px;
+}
+.three-column-card img,.two-column-card img,.four-column-card img,.one-column-card img{
+    width: 100%;
+    border-radius: 5px 5px 0px 0px;
+}
+.three-column-card h3,.two-column-card h3,.four-column-card h3, .one-column-card h3{
+    text-align: center;
+    margin: 23px 0;
+    font-size: 1.4rem;
+}
+.bootstrap-card h3{
+    color: #178A27;
+}
+.responsive-card h3{
+    color: #1686C1;
+}
+.three-column-card p,.two-column-card p,.four-column-card p, .one-column-card p{
+    margin: 0 20px 10px;
+    font-size: 20px;
+}
+.bootstrap-card,.responsive-card,.parralax-card{
+    background-color: #F2F2F2;
+    padding-bottom: 25px;
+    border-radius: 5px;
+}
+.button{
+    width: fit-content;
+    padding: 10px 30px;
+    margin: 0 auto;
+    color: white;
+    font-size: 20px;
+    margin-top: 26px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.button:hover{
+    opacity: 0.8;
+}
+.button.green{
+    background-color: #178A27;
+}
+.button.blue{
+    background-color: #1686C1;
+}
+.button.red{
+    background-color: #852406;
+}
+.two-column-card{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 40px;
+    margin-top: 30px;
+    text-align: center;
+}
+.column-right .button{
+    background-color: white;
+    color: black;
+}
+.column-right .button:hover{
+    background-color: #F2F2F2;
+}
+.our-services{
+    background-image: url("/asset/images/our-services.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 6em 0;
+    text-align: center;
+    background-repeat: no-repeat;
+    color: white;
+    margin-bottom: 30px;
+}
+.our-services h1{
+    font-size: 4.0rem;
+    padding-bottom: 10px;
+}
+.our-services h3{
+    font-size: 1.5rem;
+}
+.four-column-card{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+    margin: 0 2.3rem;
+}
+.one-column-card{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 30px 5rem;
+}
+.form-section-container{
+    background-image: url(/asset/images/contact-form.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    padding: 7rem 0 5rem;
+    background-size: cover;
+    text-align: center;
+}
+.form-section-container h1{
+    font-size: 2rem;
+    padding-bottom: 10px;
+    color: white;
+}
+.form-info{
+    margin: 30px 5rem;
+}
+.about-form{
+    font-size: 20px;
+    padding: 16px;
+    border-radius: 5px;
+    background-color: rgba(239, 232, 222, 0.3);
+}
+.form-section{
+    display: flex;
+    margin-top: 20px;
+    gap: 20px;
+}
+.personal-info{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+.personal-info input{
+    padding: 13px;
+    background-color: rgba(239, 232, 222, 0.6);
+    border: none;
+    margin-bottom: 15px;
+    outline: none;
+    border-radius: 5px;
+}
+.form-section button{
+    width: fit-content;
+    margin: 0 0 0 30px;
+    padding: 10px 18px;
+    font-size: 17px;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    background-color: #262628;
+}
+.form-section .for-desktop{
+    display: flex;
+}
+.form-section .for-mobile{
+    display: none;
+}
+.text-area{
+    display: flex;
+    flex: 1;
+    width: 100%;
+    border-radius: 5px;
+}
+.text-area textarea{
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgba(239, 232, 222, 0.6);
+}
+footer{
+    text-align: center;
+    margin: 15px 0 35px;
+}
+footer .quote{
+    color: #9999B3;
+    margin: 20px 0 55px;
+}
+footer .copyright{
+    margin-bottom: 25px;
+}
+@media (min-width: 310px) and (max-width: 500px){
+    .mobile{
+        display: flex;
+        right: 15px;
+        top: 10px;
+        padding: 7px;
+    }
+    .desktop{
+        display: none;
+    }
+    .three-column-card,.two-column-card,.four-column-card{
+        grid-template-columns: repeat(1, 1fr);
+        margin: 0px;
+    }
+    .form-section{
+        flex-direction: column;
+    }
+    .form-section .for-desktop{
+        display: none;
+    }
+    .form-section .for-mobile{
+        display: flex;
+    }
+    .card,.one-column-card,.form-info{
+        margin: 15px 5px;
+    }
+    .conquer{
+        padding: 4em 0;
+    }
+    .conquer h1{
+        font-size: 2rem;
+    }
+    .conquer h3{
+        font-size: 1rem;
+    }
+}
+@media (min-width: 501px) and (max-width: 900px){
+    .mobile{
+        display: flex;
+        right: 15px;
+        top: 10px;
+    }
+    .desktop{
+        display: none;
+    }
+    .three-column-card,.two-column-card{
+        grid-template-columns: repeat(1, 1fr);
+        margin: 0px;
+    }
+    .four-column-card{
+        grid-template-columns: 1fr 1fr;
+    }
+    .form-section{
+        flex-direction: column;
+    }
+    .form-section .for-desktop{
+        display: none;
+    }
+    .form-section .for-mobile{
+        display: flex;
+    }
+    .card,.one-column-card,.form-info{
+        margin: 15px 5px;
+    }
+    .conquer{
+        padding: 7em 0;
+    }
+    .conquer h1{
+        font-size: 2rem;
+    }
+    .conquer h3{
+        font-size: 1rem;
+    }
+}
